@@ -1,0 +1,30 @@
+@import "../../../styles/vars";
+
+.button-pro
+{
+    font-size: 1.2vw;
+    width: 11vw;
+    height: 2.5vw;
+    font-family: "Signika Negative", sans-serif;
+    border: 1px #50504f solid;
+    border-radius: 10px;
+    color: var(--gray);
+    background-color: var(--very-light-gray);
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+    margin: 10px 2px;
+}
+.button-pro:hover
+{
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0.1rem 0.3rem black;
+    transition: all 0.5s ease;
+}
+@media (max-width:640px){ 
+.button-pro{
+    width: 11vh;
+    height: 2.5vh;
+    font-size: 1.1vh;
+}
+}

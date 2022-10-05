@@ -1,0 +1,93 @@
+@import "../../../styles/vars";
+
+.section-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 39vw;
+  height: 30vw;
+  background-color: var(--gray);
+  color: var(--very-light-gray);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0.1rem 0.3rem black;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.section-des h2 {
+  font-size: 2vw;
+  margin: 10px 5px;
+  margin-bottom: 0;
+}
+.section-des form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-des label {
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 0px;
+  margin-bottom: 3px;
+}
+.section-des input {
+  width: 11vw;
+  border: 2px var(--gray) solid;
+  color: var(--gray);
+  border-radius: 5px;
+  background-color: var(--very-light-gray);
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.3vw;
+  text-align: center;
+  margin-bottom: 10px;
+  outline: none;
+}
+.resultado-descuentos {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 5px;
+  align-self: center;
+  width: 100%;
+}
+
+.section-des .resultado-descuentos .R {
+  margin: 0;
+  font-size: 1.3vw;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.respuesta {
+  margin: 0;
+  font-size: 1.2vw;
+  font-weight: 300;
+  height: 1vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 640px) {
+  .section-des {
+    width: 34vh;
+    height: 33vh;
+  }
+  .section-des h2 {
+    font-size: 2vh;
+  }
+  .section-des input{
+    width: 60px;
+  }
+  .section-des label,
+  .section-des input {
+    font-size: 1.3vh;
+  }
+  .resultado-descuentos {
+    margin-bottom: 10px;
+  }
+  .section-des .resultado-descuentos .R {
+    margin-bottom: 5px;
+  }
+  .section-des .resultado-descuentos .R,
+  .resultado-descuentos div .respuesta {
+    font-size: 1.3vh;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../styles/vars';
+
+@media (max-width:640px){
+    .cont-index{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--very-light-gray);
+    }
+}

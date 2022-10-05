@@ -1,0 +1,22 @@
+@import '../../../styles/vars';
+
+.contenedor
+{
+    margin-top: 10vw;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 29vw 29vw;
+    grid-template-rows: 31vw 31vw;
+    gap: 4vw;
+    place-content: center;
+    position: relative;
+}
+@media (max-width:640px){   
+.contenedor
+{
+    margin: 0;
+    grid-template-columns: 20vh 20vh ;
+    grid-template-rows: 19vh 19vh ;
+    row-gap: 45px;
+}
+}

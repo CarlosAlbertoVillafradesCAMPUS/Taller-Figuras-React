@@ -1,0 +1,58 @@
+@import '../../../styles/vars';
+a{
+    text-decoration: none;
+}
+.contenedor .buttons{
+    font-family: 'Signika Negative', sans-serif;
+    color: var(--very-light-gray);
+    font-size: 2vw;
+    border: 1px var(--gray) solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 0.5rem var(--gray);
+}
+.contenedor .buttons:hover{
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: var(--black);
+}
+.contenedor .buttons div:nth-child(1){
+    width: 100%;
+    background-color:var(--gray);
+    z-index: 1; 
+}
+.contenedor .buttons div:nth-child(2){
+    width: 100%;
+    height: 24vw;
+}
+.contenedor .buttons div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+    filter: grayscale(90%);
+}
+.contenedor .buttons div:nth-child(2) img:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    transition: 0.5s ease;
+    filter: none;
+}
+@media (max-width:640px){
+.contenedor .buttons{
+    font-size: 1.5vh;
+    font-weight: 300;
+}
+.contenedor .buttons div:nth-child(2){
+    height: 15vh;
+}
+.contenedor .buttons div:nth-child(2) img{
+    filter: none;
+}
+
+}

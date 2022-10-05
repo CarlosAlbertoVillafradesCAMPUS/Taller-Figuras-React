@@ -1,0 +1,95 @@
+@import '../../../styles/vars';
+
+.section-circulo
+{
+    background-color:var(--gray);
+    color: var(--very-light-gray);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.3rem black;
+    width: 26vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section-circulo .form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.section-circulo .form input{
+    align-self: center;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+.cont-section-sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-circulo h2
+{
+    font-size: 2vw;
+    margin: 0px;
+    margin-top: 15px;
+}
+.section-circulo label
+{
+    text-align: center;
+    font-size: 1.3vw;
+    margin: 0px;
+}
+.section-circulo input
+{
+    width: 11vw;
+    border: 2px var(--gray) solid;
+    color: var(--gray);
+    border-radius: 5px;
+    background-color: var(--very-light-gray);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    outline: none;
+}
+.cont-respuesta p:nth-child(1){
+    margin: 0;
+    font-size: 1.3vw;
+    margin-bottom: 5px;
+}
+.cont-respuesta p:nth-child(2){
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: 300;
+    height: 1vw;
+}
+.section-circulo p
+{
+    font-size: 1.3vw;
+}
+@media (max-width:640px){
+   
+    .section-circulo{
+        width: 29vh;
+        height: 28vh;
+        margin-bottom: 20px;
+    }
+    .section-circulo h2{
+        font-size: 2vh;
+    }
+    .section-circulo input{
+        width: 60px;
+    }
+    .section-circulo label, .section-circulo input{
+        font-size: 1.3vh;
+    }
+    .section-cuadrado{
+        margin-right:0;
+    }
+    .cont-respuesta p:nth-child(1){
+        font-size: 1.3vh;
+    }
+    .cont-respuesta p:nth-child(2){
+        font-size: 1.3vh;
+    }
+    }

@@ -1,0 +1,10 @@
+@import '../../../styles/vars';
+
+@media (max-width:640px){
+    .cont-principal .cont-button{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    }
+

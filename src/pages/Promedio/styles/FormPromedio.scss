@@ -1,0 +1,119 @@
+@import "../../../styles/vars";
+
+.cont-section-promedio section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 39vw;
+    height: 30vw;
+    background-color: var(--gray);
+    color: var(--very-light-gray);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.3rem black;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.cont-section-promedio section h2{
+    font-size: 2vw;
+    margin: 10px 5px;
+    color: #efefef;
+}
+.cont-section-promedio section form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-section-promedio section label
+{
+    font-size: 18px;
+    text-align: center;
+    color: #efefef;
+    margin-left: 5px;
+}
+.cont-section-promedio section input{
+    width: 11vw;
+    border: 2px #626160 solid;
+    color: #626160;
+    border-radius: 5px;
+    background-color: #efefef;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3vw;
+    text-align: center;
+    outline: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.cont-section-promedio section .cont-buttons{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#promedio
+{
+    font-size: 1.3vw;
+    width: 12vw;
+    height: 2.7vw;
+}
+
+.respuesta_lista
+{
+    font-size: 18px;
+    color: #efefef;
+    margin: 20px 0;
+}
+.respuesta-promedio
+{
+    height: 100px;
+    width: 100%;
+    color: #efefef;
+    border-radius: 15px;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.respuesta-promedio .R
+{
+    margin: 0px;
+    font-size:18px;
+}
+
+.respuesta_promedio
+{
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+@media (max-width:640px){ 
+    .cont-section-promedio section{
+        width: 34vh;
+        height: 33vh;
+    }
+    .cont-section-promedio section h2{
+        font-size: 2vh;
+    }
+    .cont-promedio{
+        width: 85%;
+        height: 100vh;
+    }
+    .cont-section-promedio section input{
+        width: 60px;
+    }
+    .cont-section-promedio section label, .cont-section-promedio section input{
+        font-size: 1.3vh;
+        margin: 0;
+    }
+    #promedio{
+        width: 13vh;
+        height: 3vh;
+        font-size: 1.3vh;
+    }
+    .respuesta_lista, .respuesta-promedio .R, .respuesta_promedio
+{
+    font-size: 1.3vh;
+}
+}
