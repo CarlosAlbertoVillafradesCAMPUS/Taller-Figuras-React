@@ -1,7 +1,58 @@
-.mediana{
-    height: 100vh;
-    background-color: red;
-    color: black;
+@import "../../../styles/vars";
+
+.fondo-mediana{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-image: url("@images/mediana.jpg");
+    object-fit: cover;
+}
+.cont-Mediana{
+    background-color: rgba(239, 239, 239, 0.95);
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--gray);
+    z-index: 1;
+}
+.cont-title-Mediana {
+    margin-top: 10vw;
     text-align: center;
-    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .cont-title-Mediana h1 {
+    font-size: 2.5vw;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .cont-title-Mediana p {
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin: 0px 5px;
+    text-align: center;
+  }
+.cont-section-Mediana{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+
+@media (max-width:640px){
+    .cont-Mediana{
+        width: 85%;
+    height: 100vh;
+    }
+    .cont-title-Mediana h1
+    {
+    font-size: 2.5vh;
+    margin-top: 5vh;
+    }   
+    .cont-title-Mediana p{
+        font-size: 1.3vh;
+    }   
 }

@@ -13,7 +13,8 @@ const usePromedio = () => {
         alert('No hay numeros de agregar')
     } else {
         let newList = [...statePromedio.list]
-        newList.push(`${statePromedio.number}, `)
+        newList.push(`${statePromedio.number} `);
+        newList.sort(function(a, b){return a - b});
 
         
         setStatePromedio({

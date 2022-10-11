@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../Homes/components/Footer';
+import Footer from '../../components/Footer';
 import FormPromedio from './components/FormPromedio';
 import './styles/Promedio.scss';
 
 const Promedio = () => {
 
   return (
-    <div className="cont">
+    <div className="fondo-promedio">
     <div className="cont-promedio">
       <div className="cont-title-promedio">
       <h1>Taller#3 Calcular Promedio</h1>

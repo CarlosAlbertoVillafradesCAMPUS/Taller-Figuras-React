@@ -1,7 +1,7 @@
 import React from "react";
 import ContWorkshops from "./components/ContWorkshops";
 import Workshops from "./components/Workshops";
-import Footer from "./components/Footer";
+import Footer from "../../components/Footer";
 import useListWorkshop from "./hooks/useListWorkshop";
 import './styles/Home.scss';
 

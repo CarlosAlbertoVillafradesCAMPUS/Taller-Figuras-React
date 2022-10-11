@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonsPromedio from './ButtonsPromedio';
+import ButtonsPromedio from '../../../components/Buttons';
 import usePromedio from '../hooks/usePromedio';
 import '../styles/FormPromedio.scss';
 

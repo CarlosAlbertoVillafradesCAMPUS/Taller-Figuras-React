@@ -1,8 +1,8 @@
 import React from "react";
-import { useContact } from "../hooks/useContact";
-import ContactList from "./ContactList";
-import { Contact } from "./Contact";
-import "../styles/Footer.scss";
+import { useContact } from "../pages/Homes/hooks/useContact";
+import ContactList from "../pages/Homes/components/ContactList";
+import { Contact } from "../pages/Homes/components/Contact";
+import '../styles/Footer.scss';
 
 const Footer = () => {
   const [ iconsContact ] = useContact();

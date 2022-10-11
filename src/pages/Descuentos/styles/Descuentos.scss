@@ -41,6 +41,26 @@
   flex-direction: column;
   align-items: center;
 }
+.button-des {
+  font-size: 1.3vw;
+  width: 11vw;
+  height: 2.5vw;
+  font-family: "Signika Negative", sans-serif;
+  border: 1px #50504f solid;
+  border-radius: 10px;
+  color: var(--gray);
+  background-color: var(--very-light-gray);
+  margin-bottom: 15px;
+  transition: 0.5s ease;
+  margin-top: 2.5vh;
+}
+.button-des:hover {
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0.1rem 0.3rem black;
+  transition: all 0.5s ease;
+}
+
 @media (max-width: 640px) {
   .cont-principal-descuentos {
     width: 85%;
@@ -52,5 +72,10 @@
   }
   .cont-title-descuentos p {
     font-size: 1.3vh;
+  }
+  .button-des {
+    width: 11vh;
+    height: 2.5vh;
+    font-size: 1.1vh;
   }
 }

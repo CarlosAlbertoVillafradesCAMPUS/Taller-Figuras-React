@@ -1,15 +1,14 @@
 import React from "react";
 import ContButtons from "./components/ContButtons";
-import Footer from "../Homes/components/Footer";
+import Footer from "../../components/Footer";
 import "./styles/Figuras.scss";
 import Cuadrado from "./components/Cuadrado";
 import Triangulo from "./components/Triangulo";
 import Circulo from "./components/Circulo";
-import ButtonArea from "./components/ButtonArea";
-import ButtonPerimetro from "./components/ButtonPerimetro";
 import useCuadrado from "./hooks/useCuadrado";
 import useTriangulo from "./hooks/useTriagulo";
 import useCirculo from "./hooks/useCirculo";
+import Buttons from "../../components/Buttons";
 
 const Figuras = () => {
   const {
@@ -40,7 +39,7 @@ const Figuras = () => {
   } = useCirculo();
 
   return (
-    <div className="cont">
+    <div className="fondo-principal">
       <div className="cont-principal">
         <div className="cont-title">
           <h2 className="title-figuras">Talle#1 Figuras Geometricas</h2>
@@ -57,9 +56,9 @@ const Figuras = () => {
             perimetroCuadrado={perimetroCuadrado}
           >
             <ContButtons>
-              <ButtonArea ValueAreaCuadrado={() => FunctionAreaCuadrado()} />
-              <ButtonPerimetro
-                ValuePerimetroCuadrado={() => FunctionPerimetroCuadrado()}
+              <Buttons title='Calcular Area' Function={() => FunctionAreaCuadrado()} />
+              <Buttons
+                title='Calcular Perimetro' Function={() => FunctionPerimetroCuadrado()}
               />
             </ContButtons>
           </Cuadrado>
@@ -72,8 +71,8 @@ const Figuras = () => {
             perimetroTriangulo={perimetroTriangulo}
           >
             <ContButtons>
-              <ButtonArea ValueAreaTriangulo={() => FunctionAreaTriangulo()} />
-              <ButtonPerimetro ValuePerimetroTriangulo={() => FunctionPerimetroTriangulo()} />
+              <Buttons title='Calcular Area' Function={() => FunctionAreaTriangulo()} />
+              <Buttons title='Calcular Perimetro' Function={() => FunctionPerimetroTriangulo()} />
             </ContButtons>
           </Triangulo>
         </div>
@@ -82,8 +81,8 @@ const Figuras = () => {
           stateCirculo={stateCirculo}
           setStateCirculo={setStateCirculo}>
             <ContButtons>
-              <ButtonArea ValueAreaCirculo={() => FunctionAreaCirculo()} />
-              <ButtonPerimetro ValuePerimetroCirculo={() => FunctionPerimetroCirculo()} />
+              <Buttons title='Calcular Area' Function={() => FunctionAreaCirculo()} />
+              <Buttons title='Calcular Perimetro' Function={() => FunctionPerimetroCirculo()} />
             </ContButtons>
           </Circulo>
         </div>

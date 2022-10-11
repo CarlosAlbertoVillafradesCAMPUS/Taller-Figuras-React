@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../Homes/components/Footer";
+import Footer from "../../components/Footer";
 import FormDescuentos from "./components/FormDescuentos";
-import Button from "./components/Button";
 import "./styles/Descuentos.scss";
 import useDescuentos from "./hooks/useDescuentos";
+import Buttons from "../../components/Buttons";
 
 const Descuentos = () => {
   const {
@@ -25,7 +25,7 @@ const Descuentos = () => {
           <FormDescuentos
           stateDescuentos={stateDescuentos}
           setStateDescuentos={setStateDescuentos}>
-            <Button CalcDescuento={() => CalcDescuento()} />
+            <Buttons classStyle='button-des' title='Calcular' Function={() => CalcDescuento()} />
           </FormDescuentos>
         </div>
         <Footer />
