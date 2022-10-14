@@ -10,6 +10,8 @@ module.exports={
         filename:'bundle.js',
         publicPath:'/'
     },
+    mode: 'development',
+    
     resolve:{
         extensions:['.js', '.jsx'],
         alias:{
@@ -18,7 +20,6 @@ module.exports={
             '@icons': path.resolve(__dirname, './src/assets/icons'),
         }
     },
-    mode: 'development',
     module:{
         rules:[
             {
